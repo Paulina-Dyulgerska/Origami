@@ -1,0 +1,34 @@
+.post {
+    width: 100%;
+    height: auto;
+    border: 1px solid #234465;
+    margin-bottom: 3%;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.description {
+    display: inline-block;
+    word-wrap: break-word;
+    padding: 0.5%;
+    font-style: italic;
+    margin-bottom: 0.5%;
+    width: 95%;
+    vertical-align: top;
+}
+
+.author{
+    text-decoration: underline;
+    text-align: right;
+    /* border:1px solid green; */
+    padding-right: 1%;
+}
+
+.imgWrapper {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+.img{
+    max-width: 100%;
+}
