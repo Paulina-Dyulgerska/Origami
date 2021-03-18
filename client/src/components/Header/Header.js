@@ -1,6 +1,6 @@
-import style from './Header.module.css'
-import NavigationItem from './NavigationItem/NavigationItem'
-import LogoNavigationItem from './NavigationItem/LogoNavigationItem'
+import style from './Header.module.css';
+import NavigationItem from './NavigationItem/NavigationItem';
+import LogoNavigationItem from './NavigationItem/LogoNavigationItem';
 
 const Header = () => {
     return (
