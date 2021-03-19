@@ -28,7 +28,8 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      posts: []
+      posts: [],
+      selectedPost: null,
     }
   }
 
@@ -43,13 +44,26 @@ class App extends React.Component {
       })
   }
 
+  onMenuItemClick(id) {
+     this.setState(() => ({
+      selectedPost: this.state.posts.filter(p => p.id == id)
+    }))
+  }
+
+  getPosts() {
+    return this.state.selectedPost ?? this.state.posts;
+  }
+
   render() {
     return (
       <section className={style.container}>
         <section className={style.app}>
           <Header />
-          <AsideMenu />
-          <Main posts={this.state.posts} />
+          <AsideMenu onMenuItemClick={this.onMenuItemClick.bind(this)}/>
+          {/* for posts take the function this.getPosts() and execute it!!!! Zatowa imam () nakraq, a 
+          ne prosto da podawam referenciq kym this.getPosts, kakto shteshe da e, ako nqmashe ()!!!!
+          Towa dolu e syshtoto kato towa  <Main posts={this.state.selectedPost ?? this.state.posts} /> */}
+          <Main posts={this.getPosts()} />
           <Footer />
         </section>
       </section>
