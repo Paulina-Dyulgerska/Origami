@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import { Route, NavLink, Switch, Link, Redirect, Router } from 'react-router-dom';
 
 import * as postService from './services/postService';
