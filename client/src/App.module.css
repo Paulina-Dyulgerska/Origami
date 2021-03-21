@@ -8,3 +8,19 @@
 .app {
   max-width: 100%;
 }
+
+.sectionPageWrapper {
+  display: inline-block;
+  width: 83%;
+  height: auto;
+  /* border:1px solid blue; */
+  margin-bottom: 5%;
+}
+
+.sectionPageWrapper h1 {
+  text-align: center;
+  color: #234465;
+  text-decoration: underline;
+  margin: 2% 0;
+  font-size: 60px;
+}

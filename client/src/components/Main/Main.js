@@ -2,13 +2,14 @@ import React from 'react';
 import { Fragment } from 'react';
 
 import style from './Main.module.css';
+import globalStyle from '../../App.module.css'
 
 import Post from './Post/Post';
 
 //with functional Component:
 const Main = (props) => {
     return (
-        <main className={style.mainWrapper}>
+        <main className={globalStyle.sectionPageWrapper}>
             <h1>Some heading of this very important site</h1>
             <section className={style.posts}>
                 {

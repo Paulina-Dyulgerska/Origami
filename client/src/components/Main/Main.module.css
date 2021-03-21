@@ -1,18 +1,4 @@
-.mainWrapper {
-    display: inline-block;
-    width: 83%;
-    height: auto;
-    /* border:1px solid blue; */
-    margin-bottom: 5%;
-}
-
-.mainWrapper h1 {
-    text-align: center;
-    color: #234465;
-    text-decoration: underline;
-    margin: 2% 0;
-    font-size: 36px;
-}
+@import '../../App.module.css';
 
 .posts {
     width: 100%;
