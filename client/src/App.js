@@ -45,6 +45,7 @@ class App extends React.Component {
           posts: newPosts
         }))
       })
+      .then(p=>console.log(this.state.posts));
   }
 
   onMenuItemClick(id) {
